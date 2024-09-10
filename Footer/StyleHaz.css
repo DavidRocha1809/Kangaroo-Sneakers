@@ -479,3 +479,112 @@
     margin: -200px 0 0 10px;
   }
 }
+
+
+
+/*------------------------ FOOTER ------------------------*/
+
+
+:root {
+  --background: #fff;
+  --foreground: #0A0A0A;
+  --primary: #1A1A1A;
+  --primary-foreground: #FAFAFA;
+  --secondary: #F3F3F3;
+  --muted: #F3F3F3;
+  --muted-foreground: #767676;
+}
+
+
+
+.footer {
+  background-color: var(--muted);
+  padding: 40px 40px;
+  
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .container-footer {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.column-footer h3 {
+  color: var(--primary);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.column-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column-footer ul li {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.column-footer ul li a {
+  color: var(--muted-foreground);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.column-footer ul li a:hover {
+  color: var(--primary);
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: var(--muted-foreground);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--primary);
+}
+
+
+
+#logo {
+position: absolute;
+top: 0;
+left: 0;
+width: 120px; /* Ajusta el tamaño del logo según sea necesario */
+height: 120px; /* Mantiene la proporción del logo */
+}
+.tabs {
+justify-content: space-around;
+width: 50%; /* Ajusta este valor según lo que necesites */
+height: 90px;
+display: flex;
+align-items: center; /* Centra verticalmente el contenido */
+}
+
+.menu-container {
+width: 100%;
+left: 150px;
+position: absolute;
+top: 0;
+height: 100px;
+background-color: rgba(255, 255, 255, 0.932); /* Cambia el fondo a morado */
+box-shadow: 0px 4px 2px -2px rgb(199, 199, 199); /* Sombra opcional */
+}
+.menu-container2 {
+width: 100%;
+left: 80%;;
+position: absolute;
+top: 40px;
+}
