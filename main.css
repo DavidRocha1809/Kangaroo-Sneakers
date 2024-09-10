@@ -1,4 +1,14 @@
+html{
+  height: 100%;
+  margin: 0;
+  font-size: 95%;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
     .index {
       background-color: rgba(255, 255, 255, 1);
       display: flex;
@@ -35,33 +45,7 @@
       .div-2 {
         max-width: 100%;
       }
-    }
-
-    .kangaroo {
-      color: rgba(0, 0, 0, 1);
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      text-align: center;
-      max-width: 156px;
-      font: 400 35px Hermeneus One, sans-serif;
-    }
-
-    .tabs {
-      display: flex;
-      margin-top: 8px;
-      align-items: start;
-      overflow: hidden;
-      color: var(--sds-color-text-neutral-default);
-      justify-content: start;
-      flex-wrap: wrap;
-      font: var(--sds-typography-body-font-weight-regular)
-        var(--sds-typography-body-size-medium) / 1.4
-        var(--sds-typography-body-font-family);
-    }
-    @media (max-width: 991px) {
-      .tabs {
-        max-width: 100%;
-      }
-    }
+    }    
 
     /* Quita los estilos de todos los <a>  (No hay que volver a hacerlo, en caso de no querer modificar igual, hacer una clase propia)*/
     a{
@@ -1107,10 +1091,8 @@
 
 
 
-/*------------------------ FOOTER ------------------------*/
-
-
-    :root {
+    .footer {
+      background-color: var(--muted);
       --background: #fff;
       --foreground: #0A0A0A;
       --primary: #1A1A1A;
@@ -1118,68 +1100,65 @@
       --secondary: #F3F3F3;
       --muted: #F3F3F3;
       --muted-foreground: #767676;
-  }
-  
-  
-  
-  .footer {
-      background-color: var(--muted);
-      padding: 40px 40px;
-      
-  }
-  
-  .container-footer {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
-  }
-  
-  @media (min-width: 768px) {
-      .container-footer {
-          grid-template-columns: repeat(4, 1fr);
-      }
-  }
-  
-  .column-footer h3 {
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+    }
+    
+    .container-footer {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+      max-width: 1200px; 
+      margin: 0 auto;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .column-footer {
+      flex: 1; 
+      min-width: 200px;
+      margin: 5px; 
+    }
+    
+    .column-footer h3 {
       color: var(--primary);
-      font-size: 18px;
-      margin-bottom: 10px;
-  }
-  
-  .column-footer ul {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .column-footer ul {
       list-style: none;
       padding: 0;
-  }
-  
-  .column-footer ul li {
-      margin-bottom: 8px;
-      text-align: left;
-  }
-  
-  .column-footer ul li a {
+    }
+    
+    .column-footer li {
+      margin-bottom: 10px;
+    }
+    
+    .column-footer a {
       color: var(--muted-foreground);
       text-decoration: none;
-      transition: color 0.3s ease;
-  }
-  
-  .column-footer ul li a:hover {
+    }
+    
+    .column-footer a:hover {
       color: var(--primary);
-  }
-  
-  .socials {
-      margin-top: 20px;
-  }
-  
-  .socials a {
+    
+      text-decoration: underline;
+    }
+    
+    .socials {
+      margin-bottom: 20px;
+    }
+    
+    .socials a {
       margin: 0 10px;
-      color: var(--muted-foreground);
-      text-decoration: none;
-      transition: color 0.3s ease;
-  }
-  
-  .socials a:hover {
-      color: var(--primary);
-  }
+      
+    }
+    .socials img {
+      width: 24px; /* Adjust size of icons */
+      height: auto; /* Maintain aspect ratio */
+    }
 
   
 

@@ -1,0 +1,370 @@
+
+  .div {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 23px 0 147px;
+  }
+
+  .div-2 {
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    padding-left: 29px;
+    flex-direction: column;
+  }
+
+  .div-3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .div-4 {
+    align-self: end;
+    display: flex;
+    width: 100%;
+    max-width: 1144px;
+    gap: 40px 100px;
+  }
+
+  .sneakers {
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    flex-grow: 1;
+    width: 117px;
+    font: 400 45px Jacques Francois Shadow, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .tabs {
+    display: flex;
+    align-items: start;
+    overflow: hidden;
+    color: var(--sds-color-text-neutral-default);
+    justify-content: start;
+    margin: auto 0;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium) / 1.4
+      var(--sds-typography-body-font-family);
+  }
+
+  .tab {
+    border-radius: 4px 4px 0px 0px;
+    border-color: rgba(245, 245, 245, 1);
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+  }
+  .label {
+    opacity: var(--sds-size-stroke-border);
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .tab-2 {
+    border-radius: 4px 4px 0px 0px;
+    border-color: rgba(245, 245, 245, 1);
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 4px 12px;
+  }
+ 
+  .tab-3 {
+    border-radius: 4px 4px 0px 0px;
+    border-color: rgba(245, 245, 245, 1);
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 4px 12px;
+  }
+
+  .tab-4 {
+    border-radius: 4px 4px 0px 0px;
+    border-color: rgba(245, 245, 245, 1);
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 4px 12px;
+  }
+
+  .tab-5 {
+    border-radius: 4px 4px 0px 0px;
+    border-color: rgba(245, 245, 245, 1);
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 4px 12px;
+  }
+
+  .div-5 {
+    align-self: start;
+    display: flex;
+    gap: 18px;
+  }
+  .img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 25px;
+  }
+  .div-6 {
+    margin-top: 15px;
+    height: 3px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  .terminos-y-condiciones-de-promociones {
+    color: var(--Dark-gray, #495057);
+    text-align: center;
+    opacity: var(--sds-size-stroke-border);
+    align-self: center;
+    margin-top: 20px;
+    font: 600 36px/1 Open Sans, sans-serif;
+  }
+
+
+ 
+  .div-7 {
+    align-self: center;
+    display: flex;
+    width: 249px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: start;
+    color: var(--sds-color-text-default-default);
+    justify-content: start;
+    margin: 84px 0 0 126px;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium) / 1.4
+      var(--sds-typography-body-font-family);
+  }
+
+  .title {
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    padding-bottom: 16px;
+    flex-direction: column;
+    font-weight: var(--sds-typography-body-font-weight-strong);
+    white-space: nowrap;
+    justify-content: start;
+  }
+
+  .div-8 {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .div-9 {
+    opacity: var(--sds-size-stroke-border);
+  }
+  .div-10 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+  }
+  .list-item {
+    opacity: var(--sds-size-stroke-border);
+  }
+  .div-11 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+  }
+  .div-12 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+  }
+  .div-13 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+  }
+  .div-14 {
+    display: flex;
+    min-height: 22px;
+    margin-top: 12px;
+    width: 89px;
+  }
+  .div-15 {
+    display: flex;
+    min-height: 22px;
+    margin-top: 12px;
+    width: 89px;
+  }
+  .div-16 {
+    display: flex;
+    min-height: 22px;
+    margin-top: 12px;
+    width: 89px;
+  }
+  .div-17 {
+    align-self: end;
+    z-index: 10;
+    display: flex;
+    width: 249px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: start;
+    color: var(--sds-color-text-default-default);
+    justify-content: start;
+    margin: -276px 113px 0 0;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium) / 1.4
+      var(--sds-typography-body-font-family);
+  }
+
+  .div-18 {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .div-19 {
+    opacity: var(--sds-size-stroke-border);
+  }
+  .div-20 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+  }
+  .div-21 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+
+  .div-22 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+
+  .div-23 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+    align-items: start;
+    white-space: nowrap;
+  }
+
+  .div-24 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+
+  .div-25 {
+    display: flex;
+    margin-top: 12px;
+    width: 89px;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+
+  .div-26 {
+    display: flex;
+    min-height: 22px;
+    margin-top: 12px;
+    width: 89px;
+  }
+  .footer {
+    background-color: rgba(230, 230, 230, 1);
+    border-color: rgba(217, 217, 217, 1);
+    border-top-width: 1px;
+    display: flex;
+    margin-top: -308px;
+    min-height: 462px;
+    align-items: start;
+    gap: 16px;
+    overflow: hidden;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 32px 32px 347px;
+  }
+ 
+  .title-2 {
+    display: flex;
+    min-width: 240px;
+    min-height: 83px;
+    width: 262px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .button-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+    justify-content: start;
+  }
+  .img-2 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .img-3 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .img-4 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .img-5 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .kangaroo {
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    z-index: 10;
+    margin: -231px 0 0 45px;
+    font: 400 35px Hermeneus One, sans-serif;
+  }

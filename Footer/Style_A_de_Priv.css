@@ -1,0 +1,153 @@
+/* Estilos básicos para el cuerpo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Fondo blanco para el cuerpo */
+}
+
+/* Navbar */
+.div-2 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centra el contenido del navbar */
+  padding: 10px 20px;
+  z-index: 1000; /* Asegura que el navbar esté sobre otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+  height: 60px; /* Ajusta la altura según sea necesario */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en la altura total */
+}
+
+/* Ajusta el contenido del navbar */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del menu-container */
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  margin: 0 10px;
+}
+
+.tab .label a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab .label a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* Ajusta el contenido principal para no quedar oculto debajo del navbar */
+.content {
+  padding-top: 80px; /* Ajusta según la altura del navbar, 80px es para asegurarse de que no esté cubierto */
+}
+
+/* Estilos para las imágenes en el contenido */
+
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opcional: para bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra sutil */
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer .socials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Opcional: espacio inferior */
+}
+
+.footer .socials a {
+  margin-right: 10px;
+}
+
+.footer .socials img {
+  width: 24px;
+  height: 24px;
+  /* Ajusta el tamaño según sea necesario */
+}
+
+.column-footer {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+  /* Ajusta el margen según sea necesario */
+}
+
+.column-footer h3 {
+  margin-top: 0;
+}
+
+.column-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column-footer ul li {
+  margin-bottom: 10px;
+}
+
+.column-footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.column-footer ul li a:hover {
+  color: #ccc;
+}
+
+/* Estilos adicionales para el contenido de privacidad */
+.aviso-de-privacidad {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+#logo {
+  height: 40px; /* Ajusta el tamaño según sea necesario */
+  width: auto; /* Mantiene la proporción de la imagen */
+}
+
+.div-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Alinea las imágenes a la esquina superior derecha */
+  gap: 10px;
+  padding: 20px;
+}
