@@ -449,260 +449,78 @@
   overflow: hidden;
   justify-content: start;
 }
-.img-3 {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 24px;
-  align-self: stretch;
-  margin: auto 0;
-}
-.img-4 {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 24px;
-  align-self: stretch;
-  margin: auto 0;
-}
-.img-5 {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 24px;
-  align-self: stretch;
-  margin: auto 0;
-}
-.img-6 {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 24px;
-  align-self: stretch;
-  margin: auto 0;
-}
-.div-10 {
-  display: flex;
-  min-width: 240px;
-  flex-direction: column;
-  align-items: start;
-  color: var(--sds-color-text-default-default);
-  justify-content: start;
-  width: 262px;
-  font: var(--sds-typography-body-font-weight-regular)
-    var(--sds-typography-body-size-medium) / 1.4
-    var(--sds-typography-body-font-family);
-}
-.title-2 {
-  align-self: stretch;
-  display: flex;
-  width: 100%;
-  padding-bottom: 16px;
-  flex-direction: column;
-  font-weight: var(--sds-typography-body-font-weight-strong);
-  white-space: nowrap;
-  justify-content: start;
-}
 
-.div-11 {
-  display: flex;
-  width: 100%;
-  align-items: start;
-  justify-content: start;
-}
 
-.div-12 {
-  opacity: var(--sds-size-stroke-border);
-}
-.div-13 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.list-item {
-  opacity: var(--sds-size-stroke-border);
-}
-.div-14 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-15 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-16 {
-  display: flex;
-  min-height: 22px;
-  margin-top: 12px;
-  width: 89px;
-}
-.div-17 {
-  display: flex;
-  min-width: 240px;
-  flex-direction: column;
-  align-items: start;
-  color: var(--sds-color-text-default-default);
-  justify-content: start;
-  width: 262px;
-  font: var(--sds-typography-body-font-weight-regular)
-    var(--sds-typography-body-size-medium) / 1.4
-    var(--sds-typography-body-font-family);
-}
-.title-3 {
-  align-self: stretch;
-  display: flex;
-  width: 100%;
-  padding-bottom: 16px;
-  flex-direction: column;
-  font-weight: var(--sds-typography-body-font-weight-strong);
-  white-space: nowrap;
-  justify-content: start;
-}
 
-.div-18 {
-  display: flex;
-  width: 100%;
-  align-items: start;
-  justify-content: start;
-}
+/*------------------------ FOOTER ------------------------*/
 
-.div-19 {
-  opacity: var(--sds-size-stroke-border);
-}
-.div-20 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-21 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-22 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-  white-space: nowrap;
-}
 
-.div-23 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-24 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-25 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-26 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-27 {
-  display: flex;
-  min-width: 240px;
-  flex-direction: column;
-  align-items: start;
-  color: var(--sds-color-text-default-default);
-  justify-content: start;
-  width: 262px;
-  font: var(--sds-typography-body-font-weight-regular)
-    var(--sds-typography-body-size-medium) / 1.4
-    var(--sds-typography-body-font-family);
-}
-.title-4 {
-  align-self: stretch;
-  display: flex;
-  width: 100%;
-  padding-bottom: 16px;
-  flex-direction: column;
-  font-weight: var(--sds-typography-body-font-weight-strong);
-  white-space: nowrap;
-  justify-content: start;
-}
-
-.div-28 {
-  display: flex;
-  width: 100%;
-  align-items: start;
-  justify-content: start;
-}
-
-.div-29 {
-  opacity: var(--sds-size-stroke-border);
-}
-.div-30 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-31 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-  align-items: start;
-  white-space: nowrap;
-}
-
-.div-32 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-33 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-34 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-35 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.div-36 {
-  display: flex;
-  margin-top: 12px;
-  width: 89px;
-  flex-direction: column;
-}
-.sneakers {
-  color: rgba(0, 0, 0, 1);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.footer {
+  background-color: var(--muted);
+  --background: #fff;
+  --foreground: #0A0A0A;
+  --primary: #1A1A1A;
+  --primary-foreground: #FAFAFA;
+  --secondary: #F3F3F3;
+  --muted: #F3F3F3;
+  --muted-foreground: #767676;
+  padding: 20px;
   text-align: center;
-  align-self: start;
-  z-index: 10;
-  margin: -105px 0 0 147px;
-  font: 400 45px Jacques Francois Shadow, -apple-system, Roboto, Helvetica,
-    sans-serif;
+  width: 100%;
+  margin-top: 50px;
 }
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.column-footer {
+  flex: 1; 
+  min-width: 200px;
+  margin: 5px; 
+}
+
+.column-footer h3 {
+  color: var(--primary);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.column-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column-footer li {
+  margin-bottom: 10px;
+}
+
+.column-footer a {
+  color: var(--muted-foreground);
+  text-decoration: none;
+}
+
+.column-footer a:hover {
+  color: var(--primary);
+
+  text-decoration: underline;
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  
+}
+.socials img {
+  width: 24px; /* Adjust size of icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
