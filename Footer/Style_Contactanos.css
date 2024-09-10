@@ -32,6 +32,34 @@
     var(--sds-typography-body-font-family);
 }
 
+/* Quita los estilos de todos los <a>  (No hay que volver a hacerlo, en caso de no querer modificar igual, hacer una clase propia)*/
+a{
+  text-decoration: none; 
+  color: inherit; 
+  font-weight: normal; 
+}
+
+/*Diseño de links navbar*/
+.tab {
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid transparent; 
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 5px 12px; 
+  transition: border 0.3s ease;
+}
+@media (max-width: 991px) {
+  .tab {
+    white-space: initial;
+  }
+}
+
+.tab:hover{
+  border: 1px solid black;
+} 
+
 .tab {
   border-radius: 4px 4px 0px 0px;
   border-color: rgba(245, 245, 245, 1);
@@ -42,6 +70,7 @@
   justify-content: center;
   padding: 4px 12px;
 }
+
 
 .label {
   opacity: var(--sds-size-stroke-border);
