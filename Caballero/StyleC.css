@@ -31,6 +31,53 @@
             max-width: 100%;
           }
         }
+
+        /* Quita los estilos de todos los <a>  (No hay que volver a hacerlo, en caso de no querer modificar igual, hacer una clase propia)*/
+    a{
+      text-decoration: none; 
+      color: inherit; 
+      font-weight: normal; 
+    }
+
+    /*Diseño de links navbar*/
+    .tab {
+      border-radius: 4px 4px 0px 0px;
+      border: 1px solid transparent; 
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      justify-content: center;
+      padding: 5px 12px; 
+      transition: border 0.3s ease;
+    }
+    @media (max-width: 991px) {
+      .tab {
+        white-space: initial;
+      }
+    }
+
+    .tab:hover{
+      border: 1px solid black;
+    } 
+
+    .label {
+      opacity: var(--sds-size-stroke-border);
+      align-self: stretch;
+      margin: auto 0;
+    }
+
+    .div-3 {
+      display: flex;
+      gap: 17px;
+    }
+
+    .img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 25px;
+    }
+
         .sneakers {
           color: rgba(0, 0, 0, 1);
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
