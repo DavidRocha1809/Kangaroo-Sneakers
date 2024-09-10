@@ -66,88 +66,74 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra sutil */
 }
 
-/* Estilos para el footer */
+/*------------------------ FOOTER ------------------------*/
+
+
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--muted);
+  --background: #fff;
+  --foreground: #0A0A0A;
+  --primary: #1A1A1A;
+  --primary-foreground: #FAFAFA;
+  --secondary: #F3F3F3;
+  --muted: #F3F3F3;
+  --muted-foreground: #767676;
   padding: 20px;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer .container-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
   width: 100%;
+  margin-top: 50px;
 }
 
-.footer .socials {
+.container-footer {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px; /* Opcional: espacio inferior */
-}
-
-.footer .socials a {
-  margin-right: 10px;
-}
-
-.footer .socials img {
-  width: 24px;
-  height: 24px;
-  /* Ajusta el tamaño según sea necesario */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .column-footer {
-  flex: 1;
+  flex: 1; 
   min-width: 200px;
-  margin-right: 20px;
-  /* Ajusta el margen según sea necesario */
+  margin: 5px; 
 }
 
 .column-footer h3 {
-  margin-top: 0;
+  color: var(--primary);
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .column-footer ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
-.column-footer ul li {
+.column-footer li {
   margin-bottom: 10px;
 }
 
-.column-footer ul li a {
-  color: white;
+.column-footer a {
+  color: var(--muted-foreground);
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-.column-footer ul li a:hover {
-  color: #ccc;
+.column-footer a:hover {
+  color: var(--primary);
+
+  text-decoration: underline;
 }
 
-/* Estilos adicionales para el contenido de privacidad */
-.aviso-de-privacidad {
-  padding: 20px;
+.socials {
+  margin-bottom: 20px;
 }
 
-h2 {
-  margin-top: 20px;
+.socials a {
+  margin: 0 10px;
+  
 }
-
-#logo {
-  height: 40px; /* Ajusta el tamaño según sea necesario */
-  width: auto; /* Mantiene la proporción de la imagen */
-}
-
-.div-5 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; /* Alinea las imágenes a la esquina superior derecha */
-  gap: 10px;
-  padding: 20px;
+.socials img {
+  width: 24px; /* Adjust size of icons */
+  height: auto; /* Maintain aspect ratio */
 }
