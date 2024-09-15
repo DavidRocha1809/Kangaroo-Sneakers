@@ -1,74 +1,184 @@
-/* Estilos básicos para el cuerpo */
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Modificaciones al BODY*/
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff; /* Fondo blanco para el cuerpo */
+    font-family: Arial, sans-serif;
 }
 
-/* Navbar */
-.div-2 {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: center; /* Centra el contenido del navbar */
-  padding: 10px 20px;
-  z-index: 1000; /* Asegura que el navbar esté sobre otros elementos */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
-  height: 60px; /* Ajusta la altura según sea necesario */
-  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en la altura total */
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 50px;
 }
 
-/* Ajusta el contenido del navbar */
-.menu-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centra el contenido dentro del menu-container */
-  width: 100%;
+/*LOGO*/
+.logo img {
+    height: 100px;
 }
 
-.tabs {
-  display: flex;
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
 }
 
-.tab {
-  margin: 0 10px;
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
 }
 
-.tab .label a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-  transition: background-color 0.3s, color 0.3s;
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 
-.tab .label a:hover {
-  background-color: #575757;
-  border-radius: 4px;
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-/* Ajusta el contenido principal para no quedar oculto debajo del navbar */
-.content {
-  padding-top: 80px; /* Ajusta según la altura del navbar, 80px es para asegurarse de que no esté cubierto */
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
 }
 
-/* Estilos para las imágenes en el contenido */
-
-
-.img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; /* Opcional: para bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra sutil */
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
-/*------------------------ FOOTER ------------------------*/
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
 
 
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     Contenido principal                    |    */
+/*    --------------------------------------------------------------    */
+
+
+/*Carac. del recuadro*/
+.recuadro {
+    background-color:#767676; /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno para separar el contenido de los bordes */
+    border-radius: 8px; /* Bordes redondeados para suavizar la sección */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 20px auto; /* Centrar la sección horizontalmente */
+    color: white;
+}
+
+/*Modificando los párrafos*/
+.recuadro p {
+    font-size: 15px;
+    text-align: justify; /* Justificar los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/*Modificando el título principal*/
+.recuadro h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*Modificando los subtítulos*/
+.recuadro h3 {
+    padding: 10px;
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                    Fin contenido principal                 |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO FOOTER                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Carac. del footer*/
 .footer {
   background-color: var(--muted);
   --background: #fff;
@@ -84,6 +194,7 @@ body {
   margin-top: 50px;
 }
 
+/*Todo en el footer*/
 .container-footer {
   display: flex;
   flex-wrap: wrap; 
@@ -93,47 +204,61 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/*Columnas*/
 .column-footer {
   flex: 1; 
   min-width: 200px;
   margin: 5px; 
 }
 
+/*Títulos de columnas*/
 .column-footer h3 {
   color: var(--primary);
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
+/*Listas de las columnas*/
 .column-footer ul {
   list-style: none;
   padding: 0;
 }
 
+/*Separación entre links de una columna*/
 .column-footer li {
   margin-bottom: 10px;
 }
 
+/*Modificando los links <a>*/
 .column-footer a {
   color: var(--muted-foreground);
   text-decoration: none;
 }
 
+/*Transición <a>*/
 .column-footer a:hover {
   color: var(--primary);
 
   text-decoration: underline;
 }
 
+/*íconos de las redes sociales*/
 .socials {
   margin-bottom: 20px;
 }
 
+/*Separación entre las imágenes*/
 .socials a {
   margin: 0 10px;
   
 }
+
+/**/
 .socials img {
   width: 24px; /* Adjust size of icons */
   height: auto; /* Maintain aspect ratio */
 }
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN FOOTER                             |    */
+/*    --------------------------------------------------------------    */
