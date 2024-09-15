@@ -1,0 +1,170 @@
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+/*Modificaciones al BODY*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*LOGO*/
+.logo img {
+    height: 100px;
+}
+
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO FOOTER                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Carac. del footer*/
+.footer {
+    background-color: var(--muted);
+    --background: #fff;
+    --foreground: #0A0A0A;
+    --primary: #1A1A1A;
+    --primary-foreground: #FAFAFA;
+    --secondary: #F3F3F3;
+    --muted: #F3F3F3;
+    --muted-foreground: #767676;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*Todo en el footer*/
+.container-footer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*Columnas*/
+.column-footer {
+    flex: 1; 
+    min-width: 200px;
+    margin: 5px; 
+}
+  
+/*Títulos de columnas*/
+.column-footer h3 {
+    color: var(--primary);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*Listas de las columnas*/
+.column-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Separación entre links de una columna*/
+.column-footer li {
+    margin-bottom: 10px;
+}
+
+/*Modificando los links <a>*/
+.column-footer a {
+    color: var(--muted-foreground);
+    text-decoration: none;
+}
+
+/*Transición <a>*/
+.column-footer a:hover {
+    color: var(--primary);
+  
+    text-decoration: underline;
+}
+
+/*íconos de las redes sociales*/
+.socials {
+    margin-bottom: 20px;
+}
+
+/*Separación entre las imágenes*/
+.socials a {
+    margin: 0 10px;
+    
+}
+
+/**/
+.socials img {
+    width: 24px; /* Adjust size of icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN FOOTER                             |    */
+/*    --------------------------------------------------------------    */
