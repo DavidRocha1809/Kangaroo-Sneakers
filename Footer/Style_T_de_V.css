@@ -1,174 +1,190 @@
-.div {
-  background-color: rgba(255, 255, 255, 1);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 23px 0 147px;
-}
-
-.div-2 {
-  z-index: 10;
-  display: flex;
-  width: 100%;
-  padding-left: 29px;
-  flex-direction: column;
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-/* Quita los estilos de todos los <a>  (No hay que volver a hacerlo, en caso de no querer modificar igual, hacer una clase propia)*/
-a{
-  text-decoration: none; 
-  color: inherit; 
-  font-weight: normal; 
-}
-
-/*Diseño de links navbar*/
-.tab {
-  border-radius: 4px 4px 0px 0px;
-  border: 1px solid transparent; 
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: center;
-  padding: 5px 12px; 
-  transition: border 0.3s ease;
-}
-@media (max-width: 991px) {
-  .tab {
-    white-space: initial;
-  }
-}
-
-.tab:hover{
-  border: 1px solid black;
-} 
-
-
-.div-3 {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.div-4 {
-  align-self: end;
-  display: flex;
-  width: 100%;
-  max-width: 1144px;
-  gap: 40px 100px;
-}
-
-.sneakers {
-  color: rgba(0, 0, 0, 1);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  flex-grow: 1;
-  width: 117px;
-  font: 400 45px Jacques Francois Shadow, -apple-system, Roboto, Helvetica,
-    sans-serif;
-}
-
-.tabs {
-  display: flex;
-  align-items: start;
-  overflow: hidden;
-  color: var(--sds-color-text-neutral-default);
-  justify-content: start;
-  margin: auto 0;
-  font: var(--sds-typography-body-font-weight-regular)
-    var(--sds-typography-body-size-medium) / 1.4
-    var(--sds-typography-body-font-family);
-}
-
-.tab {
-  border-radius: 4px 4px 0px 0px;
-  border-color: rgba(245, 245, 245, 1);
-  border-bottom-width: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 12px;
-}
-.label {
-  opacity: var(--sds-size-stroke-border);
-  align-self: stretch;
-  margin: auto 0;
-}
-.tab-2 {
-  border-radius: 4px 4px 0px 0px;
-  border-color: rgba(245, 245, 245, 1);
-  border-bottom-width: 1px;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: center;
-  padding: 4px 12px;
-}
-
-.tab-3 {
-  border-radius: 4px 4px 0px 0px;
-  border-color: rgba(245, 245, 245, 1);
-  border-bottom-width: 1px;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: center;
-  padding: 4px 12px;
-}
-
-.tab-4 {
-  border-radius: 4px 4px 0px 0px;
-  border-color: rgba(245, 245, 245, 1);
-  border-bottom-width: 1px;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: center;
-  padding: 4px 12px;
-}
-
-.tab-5 {
-  border-radius: 4px 4px 0px 0px;
-  border-color: rgba(245, 245, 245, 1);
-  border-bottom-width: 1px;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: center;
-  padding: 4px 12px;
-}
-
-.div-5 {
-  align-self: start;
-  display: flex;
-  gap: 18px;
-}
-.img {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 25px;
-}
-.div-6 {
-  margin-top: 15px;
-  height: 3px;
-  border: 1px solid rgba(0, 0, 0, 1);
-}
-
-.terminos-de-venta {
-  color: var(--Dark-gray, #495057);
-  text-align: center;
-  opacity: var(--sds-size-stroke-border);
-  align-self: center;
-  margin-top: 47px;
-  font: 600 36px/1 Open Sans, sans-serif;
+/*Modificaciones al BODY*/
+body {
+    font-family: Arial, sans-serif;
 }
 
 
 
-/*------------------------ FOOTER ------------------------*/
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+
+/*LOGO*/
+.logo img {
+    height: 100px;
+}
+
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
 
 
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     Contenido principal                    |    */
+/*    --------------------------------------------------------------    */
+
+
+/*Carac. del recuadro*/
+.recuadro {
+    background-color:#767676; /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno para separar el contenido de los bordes */
+    border-radius: 8px; /* Bordes redondeados para suavizar la sección */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 20px auto; /* Centrar la sección horizontalmente */
+    color: white;
+}
+
+/*Modificando los párrafos*/
+.recuadro p {
+    font-size: 15px;
+    text-align: justify; /* Justificar los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*Modificando el título principal*/
+.recuadro h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.recuadro h2{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/*Modificando los subtítulos*/
+.recuadro h3 {
+    padding: 5px;
+    padding-left: 50px;
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                    Fin contenido principal                 |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO FOOTER                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Carac. del footer*/
 .footer {
   background-color: var(--muted);
   --background: #fff;
@@ -184,6 +200,7 @@ a{
   margin-top: 50px;
 }
 
+/*Todo en el footer*/
 .container-footer {
   display: flex;
   flex-wrap: wrap; 
@@ -193,47 +210,61 @@ a{
   grid-template-columns: repeat(4, 1fr);
 }
 
+/*Columnas*/
 .column-footer {
   flex: 1; 
   min-width: 200px;
   margin: 5px; 
 }
 
+/*Títulos de columnas*/
 .column-footer h3 {
   color: var(--primary);
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
+/*Listas de las columnas*/
 .column-footer ul {
   list-style: none;
   padding: 0;
 }
 
+/*Separación entre links de una columna*/
 .column-footer li {
   margin-bottom: 10px;
 }
 
+/*Modificando los links <a>*/
 .column-footer a {
   color: var(--muted-foreground);
   text-decoration: none;
 }
 
+/*Transición <a>*/
 .column-footer a:hover {
   color: var(--primary);
 
   text-decoration: underline;
 }
 
+/*íconos de las redes sociales*/
 .socials {
   margin-bottom: 20px;
 }
 
+/*Separación entre las imágenes*/
 .socials a {
   margin: 0 10px;
   
 }
+
+/**/
 .socials img {
   width: 24px; /* Adjust size of icons */
   height: auto; /* Maintain aspect ratio */
 }
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN FOOTER                             |    */
+/*    --------------------------------------------------------------    */
