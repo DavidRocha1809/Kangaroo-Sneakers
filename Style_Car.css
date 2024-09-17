@@ -9,6 +9,9 @@
 /*Modificaciones al BODY*/
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -135,12 +138,22 @@ body {
 /*    --------------------------------------------------------------    */
 
 
+.cart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem; /* Hace que el contenedor ocupe toda la altura de la ventana */
+    width: 100vw; /* Opcional: asegura que ocupe toda la anchura */
+}
+
 .cart-container {
     background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -148,7 +161,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-ul {
+#cart-items {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -158,11 +171,12 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .item-name {
-    font-size: 16px;
+    flex: 2;
 }
 
 .item-controls {
@@ -171,39 +185,40 @@ ul {
 }
 
 .item-controls button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ff6b6b;
     border: none;
+    color: white;
     padding: 5px;
     margin: 0 5px;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.item-quantity {
-    width: 20px;
-    text-align: center;
+.item-controls .add-item {
+    background-color: #4caf50;
 }
 
 .delete-item {
-    background-color: #dc3545;
-    color: #fff;
+    background-color: #f44336;
     border: none;
-    padding: 5px;
-    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .checkout-button {
     width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
+    background-color: #2196f3;
     border: none;
-    cursor: pointer;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
     border-radius: 4px;
+    cursor: pointer;
     font-size: 16px;
 }
+
 
 .checkout-button:hover,
 .item-controls button:hover,
