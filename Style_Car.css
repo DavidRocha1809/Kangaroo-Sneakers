@@ -1,0 +1,310 @@
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Modificaciones al BODY*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+
+/*LOGO*/
+.logo img {
+    height: 100px;
+}
+
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     Contenido principal                    |    */
+/*    --------------------------------------------------------------    */
+
+
+.cart-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-name {
+    font-size: 16px;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+}
+
+.item-controls button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.item-quantity {
+    width: 20px;
+    text-align: center;
+}
+
+.delete-item {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.checkout-button:hover,
+.item-controls button:hover,
+.delete-item:hover {
+    opacity: 0.8;
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                    Fin contenido principal                 |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO FOOTER                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Carac. del footer*/
+.footer {
+  background-color: var(--muted);
+  --background: #fff;
+  --foreground: #0A0A0A;
+  --primary: #1A1A1A;
+  --primary-foreground: #FAFAFA;
+  --secondary: #F3F3F3;
+  --muted: #F3F3F3;
+  --muted-foreground: #767676;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/*Todo en el footer*/
+.container-footer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*Columnas*/
+.column-footer {
+  flex: 1; 
+  min-width: 200px;
+  margin: 5px; 
+}
+
+/*Títulos de columnas*/
+.column-footer h3 {
+  color: var(--primary);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/*Listas de las columnas*/
+.column-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*Separación entre links de una columna*/
+.column-footer li {
+  margin-bottom: 10px;
+}
+
+/*Modificando los links <a>*/
+.column-footer a {
+  color: var(--muted-foreground);
+  text-decoration: none;
+}
+
+/*Transición <a>*/
+.column-footer a:hover {
+  color: var(--primary);
+
+  text-decoration: underline;
+}
+
+/*íconos de las redes sociales*/
+.socials {
+  margin-bottom: 20px;
+}
+
+/*Separación entre las imágenes*/
+.socials a {
+  margin: 0 10px;
+  
+}
+
+/**/
+.socials img {
+  width: 24px; /* Adjust size of icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN FOOTER                             |    */
+/*    --------------------------------------------------------------    */

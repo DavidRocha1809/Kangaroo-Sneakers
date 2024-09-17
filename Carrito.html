@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style_P_de_Cookies.css">
+    <link rel="stylesheet" href="Style_Car.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Política de cookies</title>
+    <title>Carrito de compras</title>
 
 </head>
 
@@ -29,7 +29,7 @@
         <!--  Íconos  -->
         <div class="icons">
             <a href="../Inicio_de_sesion/Inicio.html"><i class="fa fa-user"></i></a> <!-- Perfil -->
-            <a href="../Carrito.html"><i class="fa fa-shopping-cart"></i></a> <!-- Carrito -->
+            <a href="./Carrito.html"><i class="fa fa-shopping-cart"></i></a> <!-- Carrito -->
             <a href="#"><i class="fa fa-heart"></i></a> <!-- Wish list -->
             
             <a href="#"><i class="fa fa-universal-access"></i></a> <!-- Accesibilidad -->
@@ -39,110 +39,30 @@
 
 
     <!--  //////////////////////////// -CONTENIDO PRINCIPAL- ////////////////////////////  -->
-    <main class="main-content">
-        <section class="recuadro">
-
-            <h1 class="heading-1">Política de cookies</h1>
-
-            <h2>¿Qué son las cookies?</h2>
-
-            <p>
-                Las cookies son pequeños archivos de texto que se almacenan en tu
-                dispositivo cuando visitas un sitio web. Estas cookies permiten que el
-                sitio web recuerde tus acciones y preferencias (como el inicio de
-                sesión, el idioma y otras configuraciones) para que no tengas que volver
-                a configurarlas cada vez que vuelves al sitio.
-            </p>
-
-            <h2>¿Cómo utilizamos las cookies?</h2>
-
-            <p>
-                En Kangaroo Sneakers, utilizamos cookies para mejorar tu
-                experiencia en nuestro sitio web. Algunas de las maneras en que
-                utilizamos las cookies incluyen:
-            </p>
-
-            <h3>Personalización</h3>
-
-            <p>
-                Para recordar tus preferencias y personalizar el
-                contenido que ves.
-            </p>
-
-            <h3>Analítica</h3>
-
-            <p>
-                Para recopilar datos sobre cómo los visitantes usan nuestro
-                sitio, lo que nos ayuda a mejorarlo continuamente.
-            </p>
-
-            <h3>Publicidad</h3>
-
-            <p>
-                Para mostrar anuncios relevantes que puedan interesarte,
-                basados en tus hábitos de navegación.
-            </p>
-
-            <h2>Tipos de cookies que utilizamos</h2>
-
-            <h3>Cookies esenciales</h3>
-
-            <p>
-                Son necesarias para que el sitio funcione
-                correctamente. Sin estas cookies, algunas partes del sitio web no
-                funcionarían.
-            </p>
-
-            <h3>Cookies de rendimiento</h3>
-
-            <p>
-                Nos permiten medir y mejorar el rendimiento de
-                nuestro sitio web.
-            </p>
-
-            <h3>Cookies de funcionalidad</h3>
-
-            <p>
-                Nos ayudan a recordar las elecciones que haces
-                para proporcionarte una experiencia más personalizada.
-            </p>
-
-            <h3>Cookies de terceros</h3>
-
-            <p>
-                En algunos casos, trabajamos con terceros que
-                también pueden establecer cookies en tu dispositivo para ayudarnos a
-                mejorar nuestros servicios, proporcionar publicidad o realizar análisis.
-            </p>
-
-            <h2>Gestión de cookies</h2>
-
-            <p>
-                Puedes controlar y/o eliminar las cookies como desees. La mayoría de los
-                navegadores te permiten rechazar o aceptar cookies, o eliminarlas
-                después de cada sesión de navegación. Ten en cuenta que si decides
-                bloquear o eliminar cookies, es posible que algunas funciones de nuestro
-                sitio no estén disponibles o no funcionen correctamente.
-            </p>
-
-            <h2>Cambios en nuestra política de cookies</h2>
-
-            <p>
-                Podemos actualizar esta política de cookies ocasionalmente para reflejar
-                cambios en nuestras prácticas y servicios. Te recomendamos revisar esta
-                política periódicamente para estar informado sobre cómo estamos
-                utilizando las cookies.
-            </p>
-
-            <h2>Contacto</h2>
-
-            <p>
-                Si tienes alguna pregunta sobre nuestra política de cookies, no dudes en
-                contactarnos a través de “kangaroosupport@gmail.com”.
-            </p>
-
-        </section>
-    </main>
+    <div class="cart-container">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items">
+            <li class="cart-item">
+                <span class="item-name">Producto 1</span>
+                <div class="item-controls">
+                    <button class="remove-item">-</button>
+                    <span class="item-quantity">1</span>
+                    <button class="add-item">+</button>
+                </div>
+                <button class="delete-item">Eliminar</button>
+            </li>
+            <li class="cart-item">
+                <span class="item-name">Producto 2</span>
+                <div class="item-controls">
+                    <button class="remove-item">-</button>
+                    <span class="item-quantity">1</span>
+                    <button class="add-item">+</button>
+                </div>
+                <button class="delete-item">Eliminar</button>
+            </li>
+        </ul>
+        <button class="checkout-button">Pagar</button>
+    </div>
 
 
     <!--  //////////////////////////// -FOOTER- ////////////////////////////  -->
