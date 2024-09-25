@@ -79,3 +79,4 @@ function Carrito() {
     }, 3000); // 3000 milisegundos = 3 segundos antes de empezar a desaparecer
 
 }
+
