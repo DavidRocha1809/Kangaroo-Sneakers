@@ -12,10 +12,58 @@ body {
 }
 
 
+/* Variables de tema claro */
+:root {
+    --background: white;
+    --foreground: black;
+    --primary: #1A1A1A;
+    --primary-foreground: #FAFAFA;
+    --secondary: #F3F3F3;
+    --muted: #E0E0E0;
+    --muted-foreground: #767676;
+}
+
+/* Variables de tema oscuro */
+body.dark-theme {
+    --background: #1C1C1C;
+    --foreground: #FAFAFA;
+    --primary: #333333;
+    --primary-foreground: #FAFAFA;
+    --secondary: #2E2E2E;
+    --muted: #444444;
+    --muted-foreground: #CCCCCC;
+}
+
+
+/* Aplicación de los colores */
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.navbar {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--muted);
+}
+
+.nav-links a {
+    color: var(--foreground);
+}
+
+.nav-links a:hover {
+    border-color: var(--foreground);
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
+}
+
 
 /*    --------------------------------------------------------------    */
 /*    |                     INICIO NAVBAR                          |    */
 /*    --------------------------------------------------------------    */
+
 
 /*Dimensiones y posicionamiento navbar*/
 .navbar {
@@ -23,7 +71,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: white;
     border-bottom: 2px solid #e0e0e0;
     margin-bottom: 50px;
 }
@@ -47,7 +94,6 @@ body {
 /*Diseño links NAVBAR*/
 .nav-links a {
     text-decoration: none;
-    color: black;
     padding: 10px 15px;
     font-weight: bold;
     border: 1px solid transparent;
@@ -56,7 +102,6 @@ body {
 
 /*Transiciones de los links*/
 .nav-links a:hover {
-    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -69,7 +114,7 @@ body {
 /*Diseño íconos NAVBAR*/
 .icons a {
     text-decoration: none;
-    color: black;
+    color: var(--foreground);
     margin-left: 15px;
     font-size: 20px;
 }
@@ -135,17 +180,15 @@ body {
 /*Carac. del footer*/
 .footer {
     background-color: var(--muted);
-    --background: #fff;
-    --foreground: #0A0A0A;
-    --primary: #1A1A1A;
-    --primary-foreground: #FAFAFA;
-    --secondary: #F3F3F3;
-    --muted: #F3F3F3;
-    --muted-foreground: #767676;
     padding: 20px;
     text-align: center;
     width: 100%;
     margin-top: 50px;
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
 }
 
 /*Todo en el footer*/
@@ -167,7 +210,7 @@ body {
   
 /*Títulos de columnas*/
 .column-footer h3 {
-    color: var(--primary);
+    color: var(--foreground);
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -185,14 +228,13 @@ body {
 
 /*Modificando los links <a>*/
 .column-footer a {
-    color: var(--muted-foreground);
+    color: var(--foreground);
     text-decoration: none;
 }
 
 /*Transición <a>*/
 .column-footer a:hover {
-    color: var(--primary);
-  
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -204,13 +246,15 @@ body {
 /*Separación entre las imágenes*/
 .socials a {
     margin: 0 10px;
-    
 }
 
 /**/
-.socials img {
+.socials i {
     width: 24px; /* Adjust size of icons */
     height: auto; /* Maintain aspect ratio */
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: 25px;
 }
 
 /*    --------------------------------------------------------------    */
