@@ -1,0 +1,308 @@
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+/*Modificaciones al BODY*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Variables de tema claro */
+:root {
+    --background: white;
+    --foreground: black;
+    --primary: #1A1A1A;
+    --primary-foreground: #FAFAFA;
+    --secondary: #F3F3F3;
+    --muted: #E0E0E0;
+    --muted-foreground: #767676;
+}
+
+/* Variables de tema oscuro */
+body.dark-theme {
+    --background: #1C1C1C;
+    --foreground: #FAFAFA;
+    --primary: #333333;
+    --primary-foreground: #FAFAFA;
+    --secondary: #2E2E2E;
+    --muted: #444444;
+    --muted-foreground: #CCCCCC;
+}
+
+
+/* Aplicación de los colores */
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.navbar {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--muted);
+}
+
+.nav-links a {
+    color: var(--foreground);
+}
+
+.nav-links a:hover {
+    border-color: var(--foreground);
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+
+/*LOGO*/
+.logo img {
+    height: 100px;
+}
+
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border-radius: 5px;
+}
+
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: var(--foreground);
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     Contenido principal                    |    */
+/*    --------------------------------------------------------------    */
+
+
+/*Carac. del recuadro*/
+.recuadro {
+    background-color:#767676; /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno para separar el contenido de los bordes */
+    border-radius: 8px; /* Bordes redondeados para suavizar la sección */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 20px auto; /* Centrar la sección horizontalmente */
+    color: white;
+}
+
+/*Modificando los párrafos*/
+.recuadro p {
+    font-size: 15px;
+    text-align: justify; /* Justificar los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/*Modificando el título principal*/
+.recuadro h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*Modificando los subtítulos*/
+.recuadro h3 {
+    padding: 10px;
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                    Fin contenido principal                 |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO FOOTER                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Carac. del footer*/
+.footer {
+    background-color: var(--muted);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
+}
+
+/*Todo en el footer*/
+.container-footer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*Columnas*/
+.column-footer {
+    flex: 1; 
+    min-width: 200px;
+    margin: 5px; 
+}
+  
+/*Títulos de columnas*/
+.column-footer h3 {
+    color: var(--foreground);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*Listas de las columnas*/
+.column-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Separación entre links de una columna*/
+.column-footer li {
+    margin-bottom: 10px;
+}
+
+/*Modificando los links <a>*/
+.column-footer a {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+/*Transición <a>*/
+.column-footer a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*íconos de las redes sociales*/
+.socials {
+    margin-bottom: 20px;
+}
+
+/*Separación entre las imágenes*/
+.socials a {
+    margin: 0 10px;
+}
+
+/**/
+.socials i {
+    width: 24px; /* Adjust size of icons */
+    height: auto; /* Maintain aspect ratio */
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: 25px;
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN FOOTER                             |    */
+/*    --------------------------------------------------------------    */
