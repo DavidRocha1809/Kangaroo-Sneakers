@@ -1,0 +1,432 @@
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+/*Modificaciones al BODY*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Variables de tema claro */
+:root {
+    --background: white;
+    --foreground: black;
+    --primary: white;
+    --primary-foreground: #FAFAFA;
+    --secondary: #F3F3F3;
+    --muted: #E0E0E0;
+    --muted-foreground: #767676;
+}
+
+/* Variables de tema oscuro */
+body.dark-theme {
+    --background: #1C1C1C;
+    --foreground: #FAFAFA;
+    --primary: #333333;
+    --primary-foreground: #FAFAFA;
+    --secondary: #2E2E2E;
+    --muted: #444444;
+    --muted-foreground: #CCCCCC;
+}
+
+
+/* Aplicación de los colores */
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.navbar {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--muted);
+}
+
+.nav-links a {
+    color: var(--foreground);
+}
+
+.nav-links a:hover {
+    border-color: var(--foreground);
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+
+/*LOGO*/
+.logo img {
+    height: 100px;
+}
+
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border-radius: 5px;
+}
+
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: var(--foreground);
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     Contenido principal                    |    */
+/*    --------------------------------------------------------------    */
+
+
+
+/*Contenedor de todo el recuadro del carrito (ubicación)*/
+.contenedor-carrito-real {
+    font-size: medium;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Diseño interior carrito y dimensiones*/
+.carrito {
+    width: 80%;
+    max-width: 800px;
+    background: var(--primary);
+    color: var(--foreground);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--foreground);
+    padding: 20px;
+}
+
+/*Título principal del carrito*/
+.carrito h1 {
+    margin: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/*Dimensiones de la tabla superior*/
+.carrito table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/*Separación y orden en filas y su contenido*/
+.carrito table th,
+.carrito table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*Negritas en los títulos de la tabla*/
+.carrito table th {
+    font-weight: bold;
+}
+
+/* TEXTO ELIMINAR A LA DERECHA
+.carrito table td:last-child {
+    text-align: right;
+}*/
+
+/*Espaciado entre el subtitulo h2 (inicio del resumen)*/
+.resumen {
+    margin-top: 20px;
+}
+
+/**/
+.resumen table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*Ajustes en la tabla inferior (resumen)*/
+.resumen table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*Ultima columna a la drecha*/
+.resumen table td:last-child {
+    text-align: right;
+}
+
+/*Alineación botón pagar*/
+.pagar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Diseño botón pagar*/
+.pagar button {
+    background-color: var(--foreground);
+    color: var(--background);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pagar button:hover {
+    background-color: var(--background);
+    color: var(--foreground);
+    box-shadow: 0 0 1px 2px var(--foreground);
+}
+
+/*Diseño de botón eliminar*/
+.eliminar {
+    background-color: var(--foreground);
+    color: var(--background);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carrito table, .resumen table {
+        width: 100%;
+        display: block;
+    }
+
+    .carrito table thead, .resumen table thead {
+        display: none;
+    }
+
+    .carrito table tbody tr, .resumen table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    .carrito table td, .resumen table td {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        border-bottom: none;
+        padding: 10px 5px;
+    }
+
+    .carrito table td:last-child, .resumen table td:last-child {
+        text-align: center;
+    }
+
+    .carrito table td:before, .resumen table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .pagar button {
+        width: 100%;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                    Fin contenido principal                 |    */
+/*    --------------------------------------------------------------    */
+
+
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO FOOTER                          |    */
+/*    --------------------------------------------------------------    */
+
+/*Carac. del footer*/
+.footer {
+    background-color: var(--muted);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
+}
+
+/*Todo en el footer*/
+.container-footer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*Columnas*/
+.column-footer {
+    flex: 1; 
+    min-width: 200px;
+    margin: 5px; 
+}
+  
+/*Títulos de columnas*/
+.column-footer h3 {
+    color: var(--foreground);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*Listas de las columnas*/
+.column-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Separación entre links de una columna*/
+.column-footer li {
+    margin-bottom: 10px;
+}
+
+/*Modificando los links <a>*/
+.column-footer a {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+/*Transición <a>*/
+.column-footer a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*íconos de las redes sociales*/
+.socials {
+    margin-bottom: 20px;
+}
+
+/*Separación entre las imágenes*/
+.socials a {
+    margin: 0 10px;
+}
+
+/**/
+.socials i {
+    width: 24px; /* Adjust size of icons */
+    height: auto; /* Maintain aspect ratio */
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: 25px;
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN FOOTER                             |    */
+/*    --------------------------------------------------------------    */
