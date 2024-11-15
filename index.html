@@ -10,8 +10,10 @@
 
 
 <body>
-
+  <script src="https://bots.easy-peasy.ai/chat.min.js" data-chat-url="https://bots.easy-peasy.ai/bot/5c1eeb10-6f83-4c66-8f84-9c58f2a59543" data-btn-position="bottom-right" data-widget-btn-color="#6366f1 " defer> </script>
+  
   <script src="script.js"></script>
+  
 
       <!--  //////////////////////////// -NAVBAR- ////////////////////////////  -->
     <!--  Logo  -->
@@ -24,19 +26,21 @@
       <ul class="nav-links">
           <li><a href="./index.html">Inicio</a></li>
           <li><a href="./Footer/Sobre_nosotros.html">Sobre nosotros</a></li>
-          <li><a href="./Caballero/caballero.html">Tienda</a></li>
-          <li><a href="./Caballero/caballero.html">Ofertas</a></li>
+          <li><a href="./Caballero/caballero.php">Tienda</a></li>
+  
       </ul>
 
       <!--  Íconos  -->
       <div class="icons">
-          <a href="./Inicio_de_sesion/Inicio.html"><i class="fa fa-user"></i></a> <!-- Perfil -->
-          <a href="./Carrito.html"><i class="fa fa-shopping-cart"></i></a> <!-- Carrito -->
+          <a href="./Inicio_de_sesion/Inicio.php"><i class="fa fa-user"></i></a> <!-- Perfil -->
+          <a href="./Carrito.php"><i class="fa fa-shopping-cart"></i></a> <!-- Carrito -->
           <a href="./Wishlist.html"><i class="fa fa-heart"></i></a> <!-- Wish list -->
-          <a href="./Idiomas_Region/Idiomas.html"><i class="fa fa-globe"></i></a> <!-- Idiomas -->
       </div>
 
   </nav>
+
+    <!--  Modo oscuro  -->
+    <script src="Oscuro.js"></script>
   
 <!--  Inicio real del body         -->
   
@@ -75,7 +79,7 @@
         Entra y explora nuestro catalogo con la mejor selección en marcas
       </div>
       <div class="div-5">
-      <a href="Caballero/caballero.html">
+      <a href="Caballero/caballero.php">
           <div class="mas-informacion">Más Información</div>
         </div>
       </a>
@@ -124,72 +128,68 @@
 
 
 
-    <!--  Inicio de nuestra seleccion         -->
-
-      <div class="div-11">
-        <div class="nuestra-seleccion">Nuestra Selección</div>
-        <div class="div-12">
-          <div class="div-13">
-
-            <div class="product-card" data-product-id="1">
-              <img src="https://via.placeholder.com/150" alt="Producto">
-              <h3>Producto 3</h3>
-              <p class="price">$3200</p>
-              <p class="description">Colores</p>
-              <div class="actions">
-                  <button class="add-to-cart" onclick="Carrito()">Agregar al Carrito</button>
-                  <span class="wishlist" data-product-id="1" id="wishlist-regular" onclick="toggleWishlist(1); Carrito();" ><i class="fa-regular fa-heart"></i></span>
-                  <span class="wishlist" data-product-id="1" id="wishlist-solid" style="display: none;" onclick="toggleWishlist(1); Carrito2();"><i class="fa-solid fa-heart"></i></span>
-          </div>
-          </div>
-
-            <div class="product-card" data-product-id="2">
-              <img src="https://via.placeholder.com/150" alt="Producto">
-              <h3>Producto 3</h3>
-              <p class="price">$3200</p>
-              <p class="description">Colores</p>
-              <div class="actions">
-                  <button class="add-to-cart" onclick="Carrito()">Agregar al Carrito</button>
-                  <span class="wishlist" data-product-id="2" id="wishlist-regular" onclick="toggleWishlist(2); Carrito();"><i class="fa-regular fa-heart"></i></span>
-                  <span class="wishlist" data-product-id="2" id="wishlist-solid" style="display: none;" onclick="toggleWishlist(2); Carrito2();"><i class="fa-solid fa-heart"></i></span>
-          </div>
-          </div>
-
-
-          <div class="product-card" data-product-id="3">
-            <img src="https://via.placeholder.com/150" alt="Producto">
-            <h3>Producto 3</h3>
-            <p class="price">$3200</p>
-            <p class="description">Colores</p>
-            <div class="actions">
-                <button class="add-to-cart" onclick="Carrito()">Agregar al Carrito</button>
-                <span class="wishlist" data-product-id="3" id="wishlist-regular" onclick="toggleWishlist(3); Carrito();"><i class="fa-regular fa-heart"></i></span>
-                  <span class="wishlist" data-product-id="3" id="wishlist-solid" style="display: none;" onclick="toggleWishlist(3); Carrito2();"><i class="fa-solid fa-heart"></i></span>
-          </div>
-        </div>
-
-            
-          </div>
-        </div>
-      </div> 
+   
       
       <!--  Fin de nuestra seleccion         -->
       
 
 
-        <!--   Sección newsletter  (a cambiar todo para que funcione el backend)  -->
+        <!--   Sección newsletter  (a cambiar todo para que funcione el backend)  
         <div class="page-newsletter">
           <div class="div-26">
             <div class="heading">Suscríbete a nuestro newsletter</div>
             <div class="subheading">Ingresa tu correo:</div>
           </div>
-          <div class="newsletter">
-            <div class="input">
-              <div class="hello-world">you@example.com</div>
+          <form id="newsletter-form">
+            <div class="newsletter">
+              <div class="input">
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <button class="button" type="submit">Enviar</button>
             </div>
-            <button class="button" onclick="mostrarAlerta()">Enviar</button>
-          </div>
+          </form>
         </div>
+        
+         Incluyendo el SDK de EmailJS 
+        
+        
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  // Inicializa EmailJS con tu Public Key
+  (function() {
+    emailjs.init("rl2SexMuhYL4hn--l"); // Reemplaza con tu Public Key
+    console.log("EmailJS initialized with Public Key.");
+  })();
+
+  // Escuchar el evento submit del formulario
+  document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene la recarga de la página
+    
+    // Obtener el correo del campo de entrada del formulario
+    const email = document.getElementById('email').value;
+    
+    // Parámetros que se enviarán a EmailJS
+    const templateParams = {
+      user_email: email // Esto debe coincidir con {{user_email}} en la plantilla
+    };
+
+    // Verificar parámetros en la consola
+    console.log("Template Params: ", templateParams);
+    
+    // Envía el correo usando EmailJS
+    emailjs.send('service_sjavdng', 'template_ihuccl5', templateParams)
+      .then(function(response) {
+        // Muestra un mensaje si el correo se envió correctamente
+        alert('Correo enviado correctamente!', response.status, response.text);
+        console.log('Correo enviado correctamente!', response.status, response.text);
+      }, function(error) {
+        // Maneja el error en caso de que el envío falle
+        console.error('Error al enviar el correo:', error);
+        alert('Error al enviar el correo:', error);
+      });
+  });
+</script>-->
 
   </div>
 
@@ -211,9 +211,8 @@
         <div class="column-footer">
             <h3>Recursos</h3>
             <ul>
-                <li><a href="#">Buscar tienda</a></li>
+                <li><a href="./Ubicanos/Ubicanos.html">Buscar tienda</a></li>
                 <li><a href="./Footer/Hazte_Miembro.html">Hazte miembro</a></li>
-                <li><a href="./Footer/Contactanos.html">Envíanos tus comentarios</a></li>
             </ul>
         </div>
 
@@ -223,7 +222,6 @@
             <ul>
                 <li><a href="./Footer/Contactanos.html">Atención al cliente</a></li>
                 <li><a href="../Footer/T_de_V.html">Envío y entrega</a></li>
-                
                 <li><a href="./Footer/Guia_de_tallas.html">Guía de tallas</a></li>
                 <li><a href="./Footer/Metodos de pago 2.0.html">Opciones de pago</a></li>
                 <li><a href="./Footer/P_de_Cookies.html">Aviso de cookies</a></li>

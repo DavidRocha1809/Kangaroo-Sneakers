@@ -1,0 +1,292 @@
+/*Modificando todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+/*Modificaciones al BODY*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Variables de tema claro */
+:root {
+    --background: white;
+    --foreground: black;
+    --primary: white;
+    --primary-foreground: #FAFAFA;
+    --secondary: #F3F3F3;
+    --muted: #E0E0E0;
+    --muted-foreground: #767676;
+}
+
+/* Variables de tema oscuro */
+body.dark-theme {
+    --background: #1C1C1C;
+    --foreground: #FAFAFA;
+    --primary: #333333;
+    --primary-foreground: #FAFAFA;
+    --secondary: #2E2E2E;
+    --muted: #444444;
+    --muted-foreground: #CCCCCC;
+}
+
+
+/* Aplicación de los colores */
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.navbar {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--muted);
+}
+
+.nav-links a {
+    color: var(--foreground);
+}
+
+.nav-links a:hover {
+    border-color: var(--foreground);
+}
+
+.footer {
+    background-color: var(--muted);
+    color: var(--foreground);
+}
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     INICIO NAVBAR                          |    */
+/*    --------------------------------------------------------------    */
+
+
+/*Dimensiones y posicionamiento navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+
+/*LOGO*/
+.logo img {
+    height: 100px;
+}
+
+/*Posicionamiento de links en navbar*/
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/*Separación de lista*/
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Diseño links NAVBAR*/
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/*Transiciones de los links*/
+.nav-links a:hover {
+    border-radius: 5px;
+}
+
+/*Posicionamiento de íconos*/
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/*Diseño íconos NAVBAR*/
+.icons a {
+    text-decoration: none;
+    color: var(--foreground);
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                     FIN NAVBAR                             |    */
+/*    --------------------------------------------------------------    */
+
+
+
+/*    --------------------------------------------------------------    */
+/*    |                     Contenido principal                    |    */
+/*    --------------------------------------------------------------    */
+
+html{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Contendor de pago*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+    
+}
+
+/*Contenedor de formulario*/
+.contenedor form {
+    width: 700px;
+    padding: 40px;
+    background: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--foreground);
+}
+
+/*Para poner las filas en paralelo (columnas) + separación*/
+form .fila {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;  /*Pasa todo hacia abajo de aceurdo a la ventana*/
+}
+
+/*Para extender por el contenedor los input*/
+.fila .columna {
+    flex: 1 1 250px;
+}
+
+/*Acomodo del título*/
+.columna .titulo {
+    font-size: 20px;
+    color: var(--foreground);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/*Separación de las columnas*/
+.columna .input-box {
+    margin: 15px 0;
+}
+
+/*Separación entre el span y el input*/
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*Personalización del input*/
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border:  1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/*columnas en las columnas*/
+.columna .flex {
+    display:  flex;
+    gap: 15px;
+}
+
+/*Separación de lo normalxd*/
+.flex .input-box {
+    margin-top: 5px;
+}
+
+/*Acomodo de imagen de tarjetas*/
+.input-box img {
+    height: 34px;
+    margin-top: 0;
+    filter: drop-shadow(0 0 1px black);
+}
+
+/*Diseño botón*/
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--foreground);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: var(--background);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Hover botón*/
+form .btn:hover {
+    background-color: var(--background);
+    color: var(--foreground);
+    box-shadow: 0 0 1px 2px var(--foreground);
+}
+
+/*    --------------------------------------------------------------    */
+/*    |                    Fin contenido principal                 |    */
+/*    --------------------------------------------------------------    */
+

@@ -1,11 +1,19 @@
+<?php
+
+    session_start();
+    $carrito = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style_wish.css">
+    <link rel="stylesheet" href="Style_Car.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Wishlist</title>
+    <title>Carrito de compras</title>
 
 </head>
 
@@ -22,9 +30,9 @@
         <ul class="nav-links">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./Footer/Sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="../Caballero/caballero.php">Hombre</a></li>
-            <li><a href="../Caballero/mujer.php">Mujer</a></li>
-            <li><a href="../Caballero/niño.php">Niño</a></li>
+            <li><a href="./Caballero/caballero.php">Hombre</a></li>
+            <li><a href="./Caballero/mujer.php">Mujer</a></li>
+            <li><a href="./Caballero/niño.php">Niño</a></li>
         </ul>
 
         <!--  Íconos  -->
@@ -33,7 +41,6 @@
             <a href="./Carrito.php"><i class="fa fa-shopping-cart"></i></a> <!-- Carrito -->
             <a href="./Wishlist.html"><i class="fa fa-heart"></i></a> <!-- Wish list -->
             
-            <a href="./Idiomas_Region/Idiomas.html"><i class="fa fa-globe"></i></a> <!-- Idiomas -->
              
             <a href="#" id="theme-toggle"><i class="fa fa-moon"></i></a> <!-- Tema oscuro -->
         </div>
@@ -44,48 +51,71 @@
     <script src="Oscuro.js"></script>
 
 
+
     <!--  //////////////////////////// -CONTENIDO PRINCIPAL- ////////////////////////////  -->
-
-    <!--h2> Mi Lista de Deseados </h2>
-
-    <div class="product-container">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="Producto">
-            <h3>Producto</h3>
-            <p class="price">$2900</p>
-            <p class="description">Colores</p>
-            <div class="actions">
-                <button class="add-to-cart">Agregar al Carrito</button>
-                <span class="wishlist">&#10084;</span>
+    <div class="contenedor-carrito-real">   
+        <div class="carrito">
+            <h1>Carrito de Compras</h1>
+            <p>Revisa y completa tu pedido.</p>
+            <?php if (empty($_SESSION['carrito'])) { ?>
+                <p>Tu carrito está vacío.</p>
+            <?php } else { ?>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        $subtotal = 0;
+                        foreach ($_SESSION['carrito'] as $index => $item) {
+                            $total_producto = $item['precio'] * $item['cantidad'];
+                            $subtotal += $total_producto;
+                    ?>
+                    <tr>
+                        <td><?php echo $item['nombre']; ?></td>
+                        <td><?php echo $item['cantidad']; ?></td>
+                        <td><?php echo '$' . number_format($total_producto, 2); ?></td>
+                        <td>
+                            <form method="post" action="eliminar_Carrito.php">
+                                <input type="hidden" name="index" value="<?php echo $index; ?>">
+                                <button type="submit" class="eliminar">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+            <div class="resumen">
+                <h2>Resumen del Pedido</h2>
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td><?php echo '$' . number_format($subtotal, 2); ?></td>
+                    </tr>
+                    <tr>
+                        <td>Envío</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td><?php echo '$' . number_format($subtotal, 2); ?></td>
+                    </tr>
+                </table>
             </div>
-        </div-->
-
-        <h2>Mis productos deseados</h2>
-        <div id="wishlist-container"></div>
-        
-        <script>
-        // Cargar productos deseados
-        function loadWishlist() {
-            const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-            
-            if (wishlist.length === 0) {
-                document.getElementById('wishlist-container').innerHTML = '<p>No hay productos en tu lista de deseos.</p>';
-            } else {
-                wishlist.forEach(productId => {
-                    // Aquí puedes hacer una llamada AJAX o fetch para obtener detalles del producto
-                    // Usaremos un ejemplo estático
-                    document.getElementById('wishlist-container').innerHTML += `
-                        <div class="product-card">
-                            <h3>Producto ${productId}</h3>
-                            <p>Detalles del producto...</p>
-                        </div>
-                    `;
-                });
-            }
-        }
-        
-        loadWishlist();
-        </script>
+            <div class="pagar">
+                <form method="post" action="verificar_sesion.php">
+                    <button type="submit">Proceder al Checkout</button>
+                </form>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+    
 
 
     <!--  //////////////////////////// -FOOTER- ////////////////////////////  -->
